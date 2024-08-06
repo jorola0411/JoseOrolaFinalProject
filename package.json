@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gridstack": "^10.3.1",
+    "lightbox2": "^2.11.4"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
+<link href="node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet"/>
+<style type="text/css">
+  .grid-stack { background: #FAFAD2; }
+  .grid-stack-item-content { background-color: #18BC9C; }
+  .grid-stack-item-content img { max-width: 100%; height: auto; }
+</style>
+
+<div class="grid-stack"></div>
+
+<script>
+  var items = [
+    {w: 4, h: 3, content: '<img src="images/puzzle1.jpg">'}, // will default to location (0,0) and 1x1
+    {w: 4, h: 3, content: '<img src="images/puzzle2.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle3.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle4.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle5.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle6.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle7.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle8.jpg">'}, // will be placed next at (1,0) and 2x1
+    {w: 4, h: 3, content: '<img src="images/puzzle9.jpg">'}, // will be placed next at (1,0) and 2x1
+  ];
+  var grid = GridStack.init();
+  grid.load(items);
+</script>
+</html>

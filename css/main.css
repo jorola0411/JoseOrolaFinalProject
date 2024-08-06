@@ -1,0 +1,6 @@
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    padding: 5px; /* Ensures the image fits within the given dimensions */ /* Ensures the images are displayed as block elements, removing any extra spacing */
+}
+
