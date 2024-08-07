@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
 <link href="node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
   <header>
@@ -19,8 +22,13 @@
     </nav>
   </header>
 
+<div class="intro">
+<h1>I'm Jose, and this is my MDIA-2294 Web Scripting 1 Final Project. </h1>
+<p>The topic of this project is blog esque with a focus on the video games I've played or been playing this year (not a lot)</p>
+</div>
 
-<div class="grid-stack"></div>
+<div class="grid-stack">
+<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
 <script>
   var items = [
     {w: 4, h: 4, content: '<img src="images/puzzle9.jpg">'}, // will default to location (0,0) and 1x1
@@ -36,5 +44,11 @@
   var grid = GridStack.init();
   grid.load(items);
 </script>
+</div>
+
+<footer class="footer">
+<p>You've reached the bottom. Yippie.</p>>
+</footer>
+
 </body>
 </html>
