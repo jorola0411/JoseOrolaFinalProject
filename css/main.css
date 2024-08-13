@@ -15,9 +15,6 @@
 .intro{
     background-color: #333;
 }
-.intro h1,p {
-    text-align: center;
-}
 .intro h1 {
     color: #FFFFFF;
     text-align: center;
@@ -28,10 +25,11 @@
 .intro p {
     text-align: center;
     font-family: "Jaldi", sans-serif;
+    color: white;
 }
 /* Header and navigation styling */
 header {
-    background-color: #333;
+    background-color: #2b2b2b;
     padding: 10px 0;
 }
 
@@ -84,6 +82,7 @@ nav.visible{
 }
  .content h2{
     font-family: "Lustria", serif;
+    font-size: 24px;
     text-align: center;
     animation-duration: 1.5s;
 }
@@ -114,17 +113,31 @@ nav.visible{
     align-items: center;
     padding: 40px 20px;
     background-color: #333;
-    font-family: "Jaldi", sans-serif;
 }
 
 
 
-/*SMT parallax*/
+
+/*parallax*/
 .parallax-section {
     position: relative;
     height: 100vh; /* Full viewport height */
     background: transparent;
     overflow: hidden;
+}
+.lightboxdescription{
+    font-family: "Jaldi", sans-serif;
+    text-align: center;
+    padding-top: 200px;
+    background-color: #333;
+    color: white;
+    margin: 0 auto;
+}
+.lightboxdescription h2{
+    font-family: "Lustria", serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight:500;
 }
 
 .grid-stack { 
@@ -154,15 +167,16 @@ nav.visible{
     margin: 0 auto;
 }
 .gallery h2{
+    font-family: "Lustria", serif;
     text-align: center;
     padding: 20px;
-    font-size: 35px;
+    font-size: 24px;
     font-weight:500;
 }
 
 .gallery p{
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .galleryslider img {
@@ -176,6 +190,7 @@ nav.visible{
 body {
     font-family: "Jaldi", sans-serif;
     font-size: 20px;
+    background-color: #333;
 }
 
 .quiztitle h1 {
@@ -250,7 +265,7 @@ ul {
 /*Footer*/
 
 .footer{
-background-color: #333;
+background-color: #2b2b2b;
 padding: 10px 0;
 }
 
@@ -295,6 +310,18 @@ font-size: 25px;
     .gallery p{
         text-align: center;
         font-size: 16px;
+    }
+    .gallery h2{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .text-left{
+        font-size: 16px;
+    }
+    .lightboxdescription{
+        padding-top: 600px;
+        margin: 0 auto;
     }
     .footer p{
         font-size: 20px;
