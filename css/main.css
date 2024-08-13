@@ -1,22 +1,29 @@
+@import 'animate.css/animate.css';
 /* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.thumbnail {
+.thumbnail{
     width: 200px;
     height: 200px;
-    padding: 5px; /* Ensures the image fits within the given dimensions */ /* Ensures the images are displayed as block elements, removing any extra spacing */
+    padding: 5px;
+    justify-content: center;
 }
-
 /* main.css */
+.intro{
+    background-color: #333;
+}
 .intro h1,p {
     text-align: center;
 }
 .intro h1 {
+    color: #FFFFFF;
     text-align: center;
     font-family: "Lustria", serif;
+    font-size: 50px;
+    animation-duration: 1.5s;
 }
 .intro p {
     text-align: center;
@@ -24,7 +31,7 @@
 }
 /* Header and navigation styling */
 header {
-    background-color: #202173;
+    background-color: #333;
     padding: 10px 0;
 }
 
@@ -33,6 +40,12 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    opacity: 0; /* Start with the navbar invisible */
+    transition: opacity 2s ease-in-out;
+}
+
+nav.visible{
+    opacity: 1;
 }
 
 .nav-list {
@@ -62,24 +75,50 @@ nav {
     border-radius: 4px;
 }
 
-/* hero sections */
-.hero {
-    position: relative;
+ .content {
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+ .content h2{
+    font-family: "Lustria", serif;
     text-align: center;
-    color: white;
-    margin: 0 auto;
-    padding: 0 1rem;
-    background-color: #8e8b8b;
+    animation-duration: 1.5s;
 }
-.herocontent img {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 1rem;
+ .content p{
+    font-family: "Jaldi", sans-serif;
+    text-align: left;
+    animation-duration: 1.5s;
+}
+
+/* Left-aligned text */
+.text-left {
+    font-family: "Jaldi", sans-serif;
+    font-size: 18px;
+    justify-content: flex-start;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 40px 20px;
+    background-color: #333;
 }
-/*Hero End */
+
+
+/* Right-aligned text */
+.text-right {
+    font-family: "Jaldi", sans-serif;
+    font-size: 18px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #333;
+    font-family: "Jaldi", sans-serif;
+}
+
+
+
 /*SMT parallax*/
 .parallax-section {
     position: relative;
@@ -87,27 +126,7 @@ nav {
     background: transparent;
     overflow: hidden;
 }
-.parallaxcontainer{
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 16px;
-}
-.statement__content {
-    grid-column: 3 / span 8;
-    text-align: center;
-    background: linear-gradient(90deg, rgba(252, 70, 107, 0.9) 0%, rgba(63, 94, 251, 0.9) 100%); 
-    border-radius: 10px;
-    padding: var(--spacing-2xl);
-    color: white;
-}
 
-.statement__content h2 { 
-    margin-bottom: var(--spacing)
-}
-.statement__content p {
-    font-size: 20px;
-    line-height: 1.5;
-}
 .grid-stack { 
     background: #FAFAD2; 
     max-width: 40%;
@@ -155,7 +174,8 @@ nav {
 }
 /* Quiz Section */
 body {
-    font-family: Open Sans;
+    font-family: "Jaldi", sans-serif;
+    font-size: 20px;
 }
 
 .quiztitle h1 {
@@ -197,7 +217,6 @@ body {
 }
 
 #quizcontainer {
-    
     width:50%;
     margin:auto;
     padding: 0 20px 20px 10px;
@@ -224,12 +243,17 @@ ul {
     display:none;
     overflow: hidden;
 }
+
+.lightboxcontainer{
+    margin: 0;
+}
 /*Footer*/
 
 .footer{
-background-color: #202173;
+background-color: #333;
 padding: 10px 0;
 }
+
 .footer p{
 text-align: center;
 color:white;
@@ -239,6 +263,9 @@ font-size: 25px;
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .nav-list a {
+        font-size: 20px;
+    }
     nav {
         flex-direction: column;
         align-items: center;
@@ -254,5 +281,22 @@ font-size: 25px;
     .hero-content img {
         width: 100%;
         padding: 0;
+        display: flex;
     }
+    .parallaxcontent h2 { 
+        font-family:"Lustria", serif; 
+        font-size: 20px;
+    }
+    .parallaxcontent p {
+        font-family: "Jaldi", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .gallery p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer p{
+        font-size: 20px;
+        }
 }

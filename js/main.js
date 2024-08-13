@@ -1,4 +1,7 @@
-
+document.addEventListener("DOMContentLoaded", function() {
+  const navbar = document.querySelector("nav");
+  navbar.classList.add("visible");
+});
 /* Slick Slider*/
 $(document).ready(function(){
     $('.galleryslider').slick({
@@ -32,10 +35,6 @@ $(document).ready(function(){
   });
 
 /*Parallax*/
-  $(".smtparallax").parallax({
-    imageSrc: "images/smtparallax.jpg"
-
-});
 
 /* Quiz Section*/
 (function() {
@@ -206,9 +205,5 @@ $(document).ready(function(){
     }
   })();
 
-/*Lightbox gallery*/
-lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true
-})
+
 
