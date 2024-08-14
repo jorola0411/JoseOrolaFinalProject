@@ -278,6 +278,11 @@ font-size: 25px;
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .intro h1 {
+     
+        font-size: 24px;
+
+    }
     .nav-list a {
         font-size: 20px;
     }
@@ -293,20 +298,7 @@ font-size: 25px;
     .nav-list li {
         margin: 5px 0;
     }
-    .hero-content img {
-        width: 100%;
-        padding: 0;
-        display: flex;
-    }
-    .parallaxcontent h2 { 
-        font-family:"Lustria", serif; 
-        font-size: 20px;
-    }
-    .parallaxcontent p {
-        font-family: "Jaldi", sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-    }
+
     .gallery p{
         text-align: center;
         font-size: 16px;
@@ -318,6 +310,12 @@ font-size: 25px;
 
     .text-left{
         font-size: 16px;
+    }
+    .text-right{
+        font-size: 16px;
+    }
+    .content h2{
+        font-size: 20px;
     }
     .lightboxdescription{
         padding-top: 600px;
