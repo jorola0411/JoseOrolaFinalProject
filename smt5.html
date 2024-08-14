@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/> <!-- type="text/css signifies the MIME type ( Multipurpose Internet Mail Extensions) which signifies that the content is CSS."-->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,17 +22,18 @@
         </nav>
     </header>
 
-    <div class="intro">
-        <h1 class="animate__animated animate__slideInDown">Shin Megami Tensei V: Vengeance </h1>
-    </div>
-    <section class="text-left">
-        <div class="content animate__animated animate__fadeInLeft">
-            <h2 class="animate__animated animate__fadeInLeft">What is this game?</h2>
-            <p class="animate__animated animate__fadeInLeft">Shin Megami Tensei V: Vengeance, or SMTVV for short, is a Japanese Role Playing Game developed by Atlus. Releasing on June 14, 2024, it's a turn-based RPG focused on  with features of recruiting demons for your team, free roam,. It's set in modern day Tokyo, with an alternate post-apocalyptic world called Da'at.</p>
-        </div>
-    </section>
+<div class="intro">
+<h1 class="animate__animated animate__slideInDown">Shin Megami Tensei V: Vengeance </h1> <!-- Using the animate.css website, animated_animated is used to apply the library of animations to the class, then "animate__slideInDown" is used for the specific animationed i wanted, in this case, the Slide in down animation.-->
+</div>
 
-<section class="parallax-section" data-parallax="scroll" data-image-src="images/smtparallax.jpg"></section> 
+<section class="text-left">
+    <div class="content animate__animated animate__fadeInLeft">
+        <h2 class="animate__animated animate__fadeInLeft">What is this game?</h2>
+        <p class="animate__animated animate__fadeInLeft">Shin Megami Tensei V: Vengeance, or SMTVV for short, is a Japanese Role Playing Game developed by Atlus. Releasing on June 14, 2024, it's a turn-based RPG focused on  with features of recruiting demons for your team, free roam,. It's set in modern day Tokyo, with an alternate post-apocalyptic world called Da'at.</p>
+    </div>
+</section>
+
+<section class="parallax-section" data-parallax="scroll" data-image-src="images/smtparallax.jpg"></section> <!-- Data-parallax is a data attribute is used for the specific type of parallax the user wants, in this case, scroll parallax. Data-image-src searches for the image used for the parallax.-->
 
 <section class="text-right">
     <div class="content animate__animated animate__fadeInRight">
@@ -43,24 +44,24 @@
 
 <section class="parallax-section" data-parallax="scroll" data-image-src="images/smtparallax2.jpg"></section>
 
-<section class="gallerycontainer">
-    <div class="gallery">
+<section class="gallerycontainer"> <!-- This is the container for the entire gallery section-->
+    <div class="gallery"> <!-- In conjuction with the CSS, this class is used to definite the image sizes and keep the gallery in one place.-->
         <h2>Gallery</h2>
-        <div class="galleryslider">
-            <div class="galleryitem"><img src="images/smt1.jpg" alt="Gallery Image 1"></div>
-            <div class="galleryitem"><img src="images/smt2.jpg" alt="Gallery Image 2"></div>
-            <div class="galleryitem"><img src="images/smt3.jpg" alt="Gallery Image 3"></div>
-            <div class="galleryitem"><img src="images/smt4.jpg" alt="Gallery Image 4"></div>
-            <div class="galleryitem"><img src="images/smt5.jpg" alt="Gallery Image 5"></div>
-            <div class="galleryitem"><img src="images/smt6.jpg" alt="Gallery Image 6"></div>
-            <div class="galleryitem"><img src="images/smt7.jpg" alt="Gallery Image 7"></div>
-            <div class="galleryitem"><img src="images/smt8.jpg" alt="Gallery Image 8"></div>
-        </div>
-        <p>Here are some various screenshots I took of my ongoing playthrough of the game.</p>
+            <div class="galleryslider">
+                <div class="galleryitem"><img src="images/smt1.jpg" alt="Gallery Image 1"></div>
+                <div class="galleryitem"><img src="images/smt2.jpg" alt="Gallery Image 2"></div>
+                <div class="galleryitem"><img src="images/smt3.jpg" alt="Gallery Image 3"></div>
+                <div class="galleryitem"><img src="images/smt4.jpg" alt="Gallery Image 4"></div>
+                <div class="galleryitem"><img src="images/smt5.jpg" alt="Gallery Image 5"></div>
+                <div class="galleryitem"><img src="images/smt6.jpg" alt="Gallery Image 6"></div>
+                <div class="galleryitem"><img src="images/smt7.jpg" alt="Gallery Image 7"></div>
+                <div class="galleryitem"><img src="images/smt8.jpg" alt="Gallery Image 8"></div>
+            </div>
+                <p>Here are some various screenshots I took of my ongoing playthrough of the game.</p>
     </div>
 </section>
-<section class="parallax-section" data-parallax="scroll" data-image-src="images/smtparallax3.jpg">
-</section>
+
+<section class="parallax-section" data-parallax="scroll" data-image-src="images/smtparallax3.jpg"></section>
 
 <section class="text-left">
     <div class="content animate__animated animate__fadeInLeft">
@@ -73,20 +74,22 @@
     <div id='quiztitle'>
         <h1>SMT Quiz!</h1>
     </div>
-    <br/>
-    <div id='quiz'></div>
-    <div class='quizbutton' id='next'><a href='#'>Next</a></div>
-    <div class='quizbutton' id='prev'><a href='#'>Prev</a></div>
-    <div class='quizbutton' id='start'> <a href='#'>Start Over</a></div>
+<br/>
+    <div id='quiz'>
+        <div class='quizbutton' id='next'><a href='#'>Next</a></div>
+        <div class='quizbutton' id='prev'><a href='#'>Prev</a></div>
+        <div class='quizbutton' id='start'> <a href='#'>Start Over</a></div>
+    </div>
 </div>
 
 <footer class="footer">
     <p>You've reached the bottom. Yippie.</p>>
 </footer>
-<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.js"></script>
-<script src="js/animateIfInView.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/main.js"></script>
+
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script> <!-- this javascript is needed for all Jquery related plugins, and has to be placed first so it intializes before the plugins that need it, if placed after the plugins, then the functions will not work.-->
+<script type="text/javascript" src="slick/slick.js"></script> <!-- This is needed to initialize the gallery section using Slick Slider.-->
+<script src="js/parallax.js"></script> <!--Needed for parallax section-->
+<script src="js/main.js"></script> <!-- Needed for quiz section, and customization of slick slider and the animation for the navigation bar-->
+
 </body>
 </html>

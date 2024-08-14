@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
-<link href="node_modules/gridstack/dist/gridstack.css" rel="stylesheet"/>
+<link href="node_modules/gridstack/dist/gridstack.css" rel="stylesheet"/> <!--enables the css and appearance of gridstack, removing it would make gridstack unviewable.-->
 <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -23,13 +23,13 @@
   </header>
 
 <div class="intro">
-<h1 class="animate__animated animate__slideInDown">Final Project</h1>
+  <h1 class="animate__animated animate__slideInDown">Final Project</h1>
 </div>
 
 <section class="text-left">
   <div class="content animate__animated animate__fadeInLeft">
       <h2 class="animate__animated animate__fadeInLeft">What is this project about?</h2>
-      <p class="animate__animated animate__slideInDown">The topic of this project is blog esque with a focus on the video games I've played or been playing this year (not a lot)</p>
+      <p class="animate__animated animate__slideInDown">The topic of this project is blog esque with a focus on the video games I've (Jose Orola) played or been playing this year (not a lot)</p>
   </div>
 </section>
 
@@ -39,11 +39,12 @@
       <p class="animate__animated animate__fadeInRight">Unscramble the puzzle to get a cool picture of me :) </p>
   </div>
 </section>
-<div class="grid-stack">
-<script src="node_modules/gridstack/dist/gridstack-all.js"></script>
+
+<div class="grid-stack"> <!-- this is for the puzzle grid/gridstack-->
+<script src="node_modules/gridstack/dist/gridstack-all.js"></script> <!-- this enables gridstack to work-->
 <script>
-  var items = [
-    {w: 4, h: 4, content: '<img src="images/puzzle9.jpg">'}, // will default to location (0,0) and 1x1
+  var items = [ //array that contains all the images/puzzle pieces
+    {w: 4, h: 4, content: '<img src="images/puzzle9.jpg">'}, // will default to location (0,0) and 1x1, w means the width of the image, and h means the height of the image. the bigger the number, the bigger the image is, and can only use whole numbers. (1.5 is not allowed.)
     {w: 4, h: 4, content: '<img src="images/puzzle3.jpg">'}, // will be placed next at (1,0) and 2x1
     {w: 4, h: 4, content: '<img src="images/puzzle1.jpg">'}, // will be placed next at (1,0) and 2x1
     {w: 4, h: 4, content: '<img src="images/puzzle8.jpg">'}, // will be placed next at (1,0) and 2x1
@@ -53,14 +54,16 @@
     {w: 4, h: 4, content: '<img src="images/puzzle5.jpg">'}, // will be placed next at (1,0) and 2x1
     {w: 4, h: 4, content: '<img src="images/puzzle2.jpg">'}, // will be placed next at (1,0) and 2x1
   ];
-  var grid = GridStack.init();
-  grid.load(items);
+  var grid = GridStack.init(); //This function intializes the grid
+  grid.load(items);//This function loads the images inside the grid
 </script>
 </div>
 
 <footer class="footer">
-<p>You've reached the bottom. Yippie.</p>>
+  <p>You've reached the bottom. Yippie.</p>>
 </footer>
+
 <script src="js/main.js"></script>
+
 </body>
 </html>
